@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import NFolioReaderKit
+import FNFolioReaderKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

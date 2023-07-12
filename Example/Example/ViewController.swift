@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import NFolioReaderKit
+import FNFolioReaderKit
 
 class ViewController: UIViewController {
 

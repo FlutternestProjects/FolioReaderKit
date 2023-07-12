@@ -1,6 +1,6 @@
 //
 //  FolioReaderScript.swift
-//  NFolioReaderKit
+//  FNFolioReaderKit
 //
 //  Created by Brian Mc Alister on 04.02.21.
 //

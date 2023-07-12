@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import NFolioReaderKit
+import FNFolioReaderKit
 
 enum Epub: Int {
     case bookOne = 0
