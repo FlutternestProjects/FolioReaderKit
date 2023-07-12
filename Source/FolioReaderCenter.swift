@@ -251,11 +251,11 @@ open class FolioReaderCenter: UIViewController, UICollectionViewDelegate, UIColl
     }
 
     func configureNavBar() {
-        let navBackground = folioReader.isNight(self.readerConfig.nightModeNavBackground, self.readerConfig.daysModeNavBackground)
+        let navBackground = folioReader.isNight(UIColor.black,UIColor.white)
         let tintColor = readerConfig.tintColor
         let navText = folioReader.isNight(UIColor.white, UIColor.black)
         let font = UIFont(name: "Avenir-Light", size: 17)!
-        setTranslucentNavigation(color: navBackground, tintColor: tintColor, titleColor: navText, andFont: font)
+        setTranslucentNavigation(false, color: navBackground, tintColor: UIColor.red, titleColor: navText, andFont: font)
     }
 
     func configureNavBarButtons() {
@@ -1349,7 +1349,7 @@ open class FolioReaderCenter: UIViewController, UICollectionViewDelegate, UIColl
         animator = ZFModalTransitionAnimator(modalViewController: menu)
         animator.isDragable = false
         animator.bounces = false
-        animator.behindViewAlpha = 0.4
+        animator.behindViewAlpha = 1
         animator.behindViewScale = 1
         animator.transitionDuration = 0.6
         animator.direction = ZFModalTransitonDirection.bottom
@@ -1371,7 +1371,7 @@ open class FolioReaderCenter: UIViewController, UICollectionViewDelegate, UIColl
         animator = ZFModalTransitionAnimator(modalViewController: menu)
         animator.isDragable = true
         animator.bounces = false
-        animator.behindViewAlpha = 0.4
+        animator.behindViewAlpha = 1
         animator.behindViewScale = 1
         animator.transitionDuration = 0.6
         animator.direction = ZFModalTransitonDirection.bottom

@@ -451,14 +451,14 @@ internal extension UIViewController {
     
     func setTransparentNavigation() {
         let navBar = self.navigationController?.navigationBar
-        navBar?.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navBar?.backgroundColor = .black
         navBar?.isHidden = true
         navBar?.isTranslucent = true
     }
     
-    func setTranslucentNavigation(_ translucent: Bool = true, color: UIColor, tintColor: UIColor = UIColor.white, titleColor: UIColor = UIColor.black, andFont font: UIFont = UIFont.systemFont(ofSize: 17)) {
+    func  setTranslucentNavigation(_ translucent: Bool = true, color: UIColor, tintColor: UIColor = UIColor.white, titleColor: UIColor = UIColor.black, andFont font: UIFont = UIFont.systemFont(ofSize: 17)) {
         let navBar = self.navigationController?.navigationBar
-        navBar?.setBackgroundImage(UIImage.imageWithColor(color), for: UIBarMetrics.default)
+        navBar?.backgroundColor = color
         navBar?.isHidden = false
         navBar?.isTranslucent = translucent
         navBar?.tintColor = tintColor

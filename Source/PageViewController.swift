@@ -44,6 +44,13 @@ class PageViewController: UIPageViewController {
         segmentedControl.setWidth(100, forSegmentAt: 0)
         segmentedControl.setWidth(100, forSegmentAt: 1)
         self.navigationItem.titleView = segmentedControl
+        
+        // Set font color for selected state
+        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+
+        // Set font color for normal state
+        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: self.folioReader.isNight(UIColor.white, UIColor.black)], for: .normal)
+
 
         viewList = [viewControllerOne, viewControllerTwo]
 
